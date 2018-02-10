@@ -1,4 +1,4 @@
-<h1>Create an article</h1>
+<h1>Edit article</h1>
 
 <% if @article.errors.any? %>
 <p>Errors:</p>
@@ -20,7 +20,7 @@
     <%= f.text_area :description %>
   </p> 
   <p>
-    <%= f.submit %>
+    <%= f.submit "Edit"%>
   </p>
 <% end %>
 <p>
