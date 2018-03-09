@@ -1,5 +1,9 @@
 require 'test_helper'
 
+def setup
+  @user = User.create(username: "Johnson", email: "john@example.com", password: "word123", admin: true)
+end
+
 class CreateCategoriesTest < ActionDispatch::IntegrationTest
   test "get new category form and create category" do
     get new_category_path
